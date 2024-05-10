@@ -1,0 +1,148 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+  scroll-snap-type: y  mandatory; 
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background-color: transparent;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 0;
+    scrollbar-width: none;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+  
+ 
+  body{
+	height: 100svh;
+	width: 100vw;
+	overflow-x: hidden;
+    overflow-y: hidden;
+	background-image: url(../ressources/fond.jpg);
+	background-position: center;
+	background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.connexion{
+    background-color: white;
+    width: 25vw;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 25px;
+}
+
+.connexion h1{
+  color: #000;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.connexion p {
+  color: #424242;
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Montserrat;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px; 
+  letter-spacing: 1.5px;
+}
+
+.formulaire input::placeholder{
+  color: #000;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px; 
+  letter-spacing: 1.5px;
+
+}
+
+.formulaire{
+
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+form{
+
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.formulaire input{
+  height: 50px;
+  border: 0px;
+  border-bottom: 2px solid black;
+  width: 80%;
+  transition: 0.3s;
+  color: #000;
+  font-size: 15px;
+  font-weight: bolder;
+  letter-spacing: 1.5px;
+}
+
+.formulaire input:focus{
+  border: 2px solid black;
+  border-radius: 25px;
+  padding-left: 10px;
+  transition: 0.3s;
+  color: #000;
+  font-size: 15px;
+  font-weight: bolder;
+  letter-spacing: 1.5px;
+}
+
+
+#submit{
+  border-radius: 50px;
+  border: 1px solid #000;
+  background: #1B1D21;
+  color: white;
+  color: #FFF;
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px; 
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+#submit:hover{
+ background-color: #D4D4D4;
+ color: black;
+ border: 0px;
+}
